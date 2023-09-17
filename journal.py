@@ -145,3 +145,4 @@ class GJournal(cli.Application):
         
 if __name__=="__main__":
     GJournal()
+    

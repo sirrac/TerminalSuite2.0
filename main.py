@@ -2,6 +2,7 @@ from WeatherLookup import *
 import questionary
 from plumbum import *
 from journal import *
+from NBAStats import *
     
 if __name__ == '__main__':
     
@@ -12,6 +13,7 @@ if __name__ == '__main__':
         choices=[
             'The Weather App',
             'Journal',
+            'NBA Stat Explorer',
             'Quit',
         ]).ask()
     
@@ -20,5 +22,8 @@ if __name__ == '__main__':
                  WeatherApp()
             case 'Journal':
                  GJournal()
+            case 'NBA Stat Explorer':
+                 NBAStat()
             case 'Quit':
                  print('Bye!')
+            
